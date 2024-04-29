@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+</head>
+<body>
+    <nav class="desktop-nav">
+        <div class="logo">Aarin DEB</div>
+        <div>
+            <ul class="nav-liens">
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="nav-hamburger">
+        <div class="logo">Aarin DEB</div>
+            <div class="menu-hamburger">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-liens">
+                    <li><a href="#apropos" onclick="toggleMenu()">A propos</a></li>
+                    <li><a href="#experiences" onclick="toggleMenu()">Expériences</a></li>
+                    <li><a href="#projets" onclick="toggleMenu()">Projets</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/img/IMG_4197.jpg" alt="Aarin Deb photo de profile">
+        </div>
+
+        <div class="section__text">
+
+            <p class="section__text__p1">Salut! Je suis</p>
+
+            <h1 class="titre">Aarin DEB</h1>
+
+            <p class="section__text__p2">Développeur Front-End & Back-End</p>
+
+            <div class="btn-container">
+                <!-- Mettre le cv en lien -->
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">
+                Téléchrgez mon CV
+                </button>
+
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/img/linkedin (2).png" 
+                alt="Mon profile Github"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/aarin-deb'">
+
+                <img src="./assets/img/github.png" 
+                alt="Mon profile LinkedIn"
+                class="icon" 
+                onclick="location.href='https://github.com/userXXIIXII'">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="a-propos">
+        <p class="section__text__p1">Découvrez en plus</p>
+        <h1 class="titre">Qui suis-je?</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/img/A propos pic.jpg" 
+                alt="Photo de profil" 
+                class="a-propos-pic">
+            </div>
+            <div class="a-propos-details-container">
+                <div class="a-propos-containers">
+                    <div class="details-container">
+                        <img src="./assets/img/expérience-icon.png" 
+                        alt="experience icon"
+                        class="icon">
+
+                        <h3>Expériences</h3>
+                        <p>2+ années <br>Font-End développement</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/img/education-icon.png" 
+                        alt="education icon"
+                        class="icon">
+
+                        <h3>Education</h3>
+                        <p> Formation Développeur Web et Web Mobile - 
+                            Centre Européen de Formation 
+                            <br>Titre Professionnel Développeur Web et Web Mobile</p>
+                    </div>
+
+                    <div class="text-container">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                             Minima alias deserunt, eius, tempore nostrum rem adipisci 
+                             quidem magni nesciunt quis et quas quibusdam doloribus saepe 
+                             illo quae itaque nobis expedita consectetur amet labore rerum 
+                             corporis nam? Dolore iste, nulla, enim voluptatum nemo soluta 
+                             ab officia sequi doloremque alias quos hic!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/img/arrow-down-sign-to-navigate.png" 
+        alt="fleche-icon" 
+        class="icon fleche"
+        onclick="location.href='./#experiences'">
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
