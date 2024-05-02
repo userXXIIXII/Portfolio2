@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="desktop-nav">
-        <div class="logo">Aarin DEB</div>
+        <div class="logoPF"><img class="logoPF" src=".//assets/img/logo.png" alt="logo"></div>
         <div>
             <ul class="nav-liens">
                 <li><a href="#apropos">A propos</a></li>
@@ -21,7 +21,7 @@
     </nav>
 
     <nav id="nav-hamburger">
-        <div class="logo">Aarin DEB</div>
+        <div class="logoPF"><img class="logoPF" src=".//assets/img/logo.png" alt="logo"></div>
             <div class="menu-hamburger">
                 <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
@@ -38,6 +38,7 @@
     </nav>
 
     <section id="profile">
+
         <div class="section__pic-container">
             <img src="./assets/img/IMG_4197.jpg" alt="Aarin Deb photo de profile">
         </div>
@@ -51,8 +52,7 @@
             <p class="section__text__p2">Développeur Front-End & Back-End</p>
 
             <div class="btn-container">
-                <!-- Mettre le cv en lien -->
-                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_aarin.pdf')">
                 Téléchrgez mon CV
                 </button>
 
@@ -62,18 +62,23 @@
             </div>
 
             <div id="socials-container">
-                <img src="./assets/img/linkedin (2).png" 
-                alt="Mon profile Github"
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/aarin-deb'">
 
-                <img src="./assets/img/github.png" 
-                alt="Mon profile LinkedIn"
-                class="icon" 
-                onclick="location.href='https://github.com/userXXIIXII'">
+                <a href="https://github.com/userXXIIXII" target="_blank">
+                    <img src="./assets/img/github_icon.png" 
+                    alt="Mon profile Github"
+                    class="icon">
+                </a>
+
+                <a href="https://www.linkedin.com/in/aarin-deb" target="_blank">
+                    <img src="./assets/img/linkedin_icon.png" 
+                    alt="Mon profile LinkedIn"
+                    class="icon">
+                </a>
+
             </div>
 
         </div>
+
     </section>
 
     <section id="a-propos">
@@ -81,14 +86,14 @@
         <h1 class="titre">Qui suis-je?</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/img/A propos pic.jpg" 
+                <img src="./assets/img//IMG_1947_Facetune_17-03-2020-21-54-35.jpg" 
                 alt="Photo de profil" 
                 class="a-propos-pic">
             </div>
             <div class="a-propos-details-container">
                 <div class="a-propos-containers">
                     <div class="details-container">
-                        <img src="./assets/img/expérience-icon.png" 
+                        <img src="./assets/img/experience_icon.png" 
                         alt="experience icon"
                         class="icon">
 
@@ -97,7 +102,7 @@
                     </div>
 
                     <div class="details-container">
-                        <img src="./assets/img/education-icon.png" 
+                        <img src="./assets/img/education_icon.png" 
                         alt="education icon"
                         class="icon">
 
@@ -118,11 +123,6 @@
                 </div>
             </div>
         </div>
-
-        <img src="./assets/img/arrow-down-sign-to-navigate.png" 
-        alt="fleche-icon" 
-        class="icon fleche"
-        onclick="location.href='./#experiences'">
 
     </section>
     <script src="./script.js"></script>
