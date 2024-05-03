@@ -12,15 +12,6 @@
 
 
 body{
-    /* font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    font-style: normal; */
-
-    /* font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal; */
-
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -203,6 +194,10 @@ section{
     margin: auto 0;
 }
 
+.photo-profile{
+    border-radius: 13rem;
+}
+
 .section__text{
     align-self: center;
     text-align: center;
@@ -257,7 +252,7 @@ section{
 }
 
 .btn-color-1, .btn-color-2{
-    border: rgb(53, 53, 53) 0.1rem solid; 
+    border: white 0.1rem solid; 
 }
 
 .btn-color-1:hover, .btn-color-2:hover{
@@ -302,16 +297,157 @@ section{
     flex-direction: column;
 }
 
-.a-propos-container, .a-propos-details-container{
+.a-propos-containers, .a-propos-details-container{
     display: flex;
 }
 
 .a-propos-pic{
     border-radius: 12rem;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
 
-.fleche{
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background-image: url(./assets/img/Theme/Theme\ NAV.jpg);
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.text-container{
+    margin-bottom: 170px;
+}
+
+.section__pic-container{
+    padding-bottom: 110px;
+}
+
+/* Section Expériences */
+
+#experiences{
     position: relative;
-    right: -5rem;
-    bottom: 2.5rem;
+}
+
+.experience-sous-titre{
+    color: white
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+/* Section projets */
+
+#projets{
+    position: relative;
+}
+
+.color-container{
+    border-color: rgb(163, 163, 163);
+    background-image: url(./assets/img/Theme/Theme\ NAV.jpg);
+}
+
+.projet-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.projet-titre{
+    margin: 1rem;
+    color: white;
+}
+
+.projet-btn{
+    color: white;
+    border-color: white;
+}
+
+/* Contact */
+
+#contact a{
+    color: white;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background-image: url(./assets/img/Theme/Theme\ NAV.jpg);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+/* Footer */
+
+.nav2{
+    background: none;
+}
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
 }
